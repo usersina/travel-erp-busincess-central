@@ -12,17 +12,18 @@ table 50101 Request
         field(2; ClientID; Code[20])
         {
             DataClassification = ToBeClassified;
-            // TableRelation = "Client"."No.";
+            TableRelation = Employee;
         }
         field(3; FlightID; Code[20])
         {
             DataClassification = ToBeClassified;
+            TableRelation = Flight;
         }
         field(4; NumberOfTravelers; Integer)
         {
             DataClassification = ToBeClassified;
         }
-        field(5; RequestStatus; Text[50])
+        field(5; RequestStatus; Enum "Request Status")
         {
             DataClassification = ToBeClassified;
         }

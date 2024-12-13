@@ -15,18 +15,23 @@ page 50103 "Flight List"
             {
                 field(FlightID; Rec.FlightID)
                 {
+                    ApplicationArea = All;
                 }
                 field(FlightNumber; Rec.FlightNumber)
                 {
+                    ApplicationArea = All;
                 }
                 field(Destination; Rec.Destination)
                 {
+                    ApplicationArea = All;
                 }
                 field(Date; Rec.Date)
                 {
+                    ApplicationArea = All;
                 }
                 field(SeatsAvailable; Rec.SeatsAvailable)
                 {
+                    ApplicationArea = All;
                 }
             }
         }

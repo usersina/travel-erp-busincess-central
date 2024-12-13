@@ -16,9 +16,11 @@ page 50104 "Flight Card"
 
                 field(FlightID; Rec.FlightID)
                 {
+                    ApplicationArea = All;
                 }
                 field(FlightNumber; Rec.FlightNumber)
                 {
+                    ApplicationArea = All;
                 }
             }
 
@@ -28,12 +30,15 @@ page 50104 "Flight Card"
 
                 field(Date; Rec.Date)
                 {
+                    ApplicationArea = All;
                 }
                 field(Destination; Rec.Destination)
                 {
+                    ApplicationArea = All;
                 }
                 field(SeatsAvailable; Rec.SeatsAvailable)
                 {
+                    ApplicationArea = All;
                 }
             }
         }

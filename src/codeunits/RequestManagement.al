@@ -5,7 +5,7 @@ codeunit 50100 RequestManagement
         RequestRec: Record Request;
     begin
         if RequestRec.Get(RequestID) then begin
-            RequestRec.RequestStatus := 'Approved';
+            RequestRec.RequestStatus := RequestRec.RequestStatus::Approved;
             RequestRec.Modify();
         end;
     end;
@@ -15,7 +15,7 @@ codeunit 50100 RequestManagement
         RequestRec: Record Request;
     begin
         if RequestRec.Get(RequestID) then begin
-            RequestRec.RequestStatus := 'Rejected';
+            RequestRec.RequestStatus := RequestRec.RequestStatus::Rejected;
             RequestRec.Modify();
         end;
     end;
