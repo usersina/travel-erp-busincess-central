@@ -12,6 +12,14 @@ table 50100 Flight
         field(2; FlightNumber; Code[20])
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            var
+                ErrorMsg_L: label 'Flight number must be 5 characters long';
+            begin
+                // Dumb way to mimick IATA code validation, e.g. "AA123"
+                if (STRLEN(FlightNumber) <> 5) then
+                    ERROR(ErrorMsg_L);
+            end;
         }
         field(3; Destination; Text[100])
         {

@@ -12,6 +12,7 @@ table 50101 Request
         field(2; ClientID; Code[20])
         {
             DataClassification = ToBeClassified;
+            // TableRelation = "Client"."No.";
         }
         field(3; FlightID; Code[20])
         {

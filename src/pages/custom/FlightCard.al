@@ -1,8 +1,8 @@
 page 50104 "Flight Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    // ApplicationArea = All;
+    // UsageCategory = Administration;
     SourceTable = Flight;
     Caption = 'Flight Card';
 

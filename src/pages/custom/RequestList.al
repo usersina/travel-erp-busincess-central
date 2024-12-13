@@ -1,6 +1,8 @@
 page 50101 "Request List"
 {
     PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = Request;
 
     layout
