@@ -4,6 +4,8 @@ page 50103 "Flight List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Flight;
+    Caption = 'Flight List';
+    CardPageId = 50104;
 
     layout
     {

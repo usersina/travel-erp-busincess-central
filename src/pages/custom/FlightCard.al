@@ -1,24 +1,35 @@
 page 50104 "Flight Card"
 {
     PageType = Card;
+    ApplicationArea = All;
+    UsageCategory = Administration;
     SourceTable = Flight;
+    Caption = 'Flight Card';
 
     layout
     {
         area(content)
         {
-            group(Group)
+            group(General)
             {
+                Caption = 'General';
+
                 field(FlightID; Rec.FlightID)
                 {
                 }
                 field(FlightNumber; Rec.FlightNumber)
                 {
                 }
-                field(Destination; Rec.Destination)
+            }
+
+            group(Details)
+            {
+                Caption = 'Details';
+
+                field(Date; Rec.Date)
                 {
                 }
-                field(Date; Rec.Date)
+                field(Destination; Rec.Destination)
                 {
                 }
                 field(SeatsAvailable; Rec.SeatsAvailable)
