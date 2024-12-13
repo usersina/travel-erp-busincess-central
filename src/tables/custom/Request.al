@@ -31,6 +31,12 @@ table 50101 Request
         {
             DataClassification = ToBeClassified;
         }
+        field(7; "Number of approvals"; Integer)
+        {
+            Caption = 'Number of approvals';
+            FieldClass = FlowField;
+            CalcFormula = count(Request where(RequestStatus = const(Approved)));
+        }
     }
 
     keys
