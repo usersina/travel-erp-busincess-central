@@ -1,0 +1,10 @@
+# ignore all related to business central
+
+.alpackages
+.snapshots
+
+.vscode/*
+!.vscode/launch.json
+!.vscode/rad.json
+
+Default Publisher_Travel_1.0.0.0.app
