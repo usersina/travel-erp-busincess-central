@@ -1,0 +1,19 @@
+@startuml use-case-diagram
+actor "Travel Agent" as TA
+actor "Client" as C
+
+usecase "Create Flight" as UC1
+usecase "Validate Request" as UC2
+usecase "Reject Request" as UC3
+
+usecase "View Flights" as UC4
+usecase "Make Flight Request" as UC5
+
+TA --> UC1
+TA --> UC2
+TA --> UC3
+
+C --> UC4
+C --> UC5
+
+@enduml

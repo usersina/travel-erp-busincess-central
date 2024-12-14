@@ -1,0 +1,27 @@
+erDiagram
+    Client {
+        string ClientID PK
+        string Name
+        string Email
+        string Phone
+    }
+
+    Flight {
+        string FlightID PK
+        string FlightNumber
+        string Destination
+        date Date
+        int SeatsAvailable
+    }
+
+    Request {
+        string RequestID PK
+        string ClientID FK
+        string FlightID FK
+        int NumberOfTravelers
+        string RequestStatus
+        date RequestDate
+    }
+
+    Client ||--o{ Request : "makes"
+    Flight ||--o{ Request : "requested_for"
