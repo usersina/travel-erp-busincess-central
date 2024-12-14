@@ -36,4 +36,21 @@ page 50103 "Flight List"
             }
         }
     }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(FlightList)
+            {
+                ApplicationArea = All;
+                Caption = 'Flight List';
+                Image = List;
+                Promoted = true;
+                PromotedCategory = Report;
+                ToolTip = 'Show the list of flights';
+                RunObject = report "Flight Details Report";
+            }
+        }
+    }
 }
