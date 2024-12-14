@@ -10,7 +10,7 @@ A business central 7 project for educational purposes.
 ## Todo
 
 - [ ] Translation
-- [ ] Report
+- [x] Report
 - [x] Dashboard
 - [ ] Presentation
 
