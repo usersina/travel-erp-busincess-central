@@ -48,10 +48,10 @@ page 50105 "Administrator RoleCenter"
                     ApplicationArea = All;
                 }
             }
-            group(Flights)
+            group(Explore)
             {
                 Caption = 'Flights';
-                action(Subjects)
+                action(Flights)
                 {
                     RunObject = Page "Flight List";
                     ApplicationArea = All;
