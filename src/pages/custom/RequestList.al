@@ -40,4 +40,21 @@ page 50101 "Request List"
             }
         }
     }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(RequestList)
+            {
+                ApplicationArea = All;
+                Caption = 'Request List';
+                Image = List;
+                Promoted = true;
+                PromotedCategory = Report;
+                ToolTip = 'Show the list of requests';
+                RunObject = report "Client Requests Report";
+            }
+        }
+    }
 }
