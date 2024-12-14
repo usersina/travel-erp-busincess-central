@@ -3,16 +3,16 @@ page 50105 "Administrator RoleCenter"
     PageType = RoleCenter;
     Caption = 'Administrator Role Center';
 
-    // layout
-    // {
-    //     area(RoleCenter)
-    //     {
-    //         part(PartName; "Student Over Year Status")
-    //         {
-    //             ApplicationArea = All;
-    //         }
-    //     }
-    // }
+    layout
+    {
+        area(RoleCenter)
+        {
+            part(PartName; "Requests Overall")
+            {
+                ApplicationArea = All;
+            }
+        }
+    }
 
     actions
     {

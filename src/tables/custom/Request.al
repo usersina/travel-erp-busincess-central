@@ -37,6 +37,18 @@ table 50101 Request
             FieldClass = FlowField;
             CalcFormula = count(Request where(RequestStatus = const(Approved)));
         }
+        field(8; "Number of rejections"; Integer)
+        {
+            Caption = 'Number of rejections';
+            FieldClass = FlowField;
+            CalcFormula = count(Request where(RequestStatus = const(Rejected)));
+        }
+        field(9; "Number of pending"; Integer)
+        {
+            Caption = 'Number of pending';
+            FieldClass = FlowField;
+            CalcFormula = count(Request where(RequestStatus = const(Pending)));
+        }
     }
 
     keys
